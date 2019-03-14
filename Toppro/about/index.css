@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+header {
+  height: 75px;
+}
+header .head-fixed {
+  padding-top: 20px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: #3a3b44;
+}
+header .head-fixed .head-margin {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .head-fixed .head-margin .head-logo {
+  float: left;
+  width: 180px;
+}
+header .head-fixed .head-margin .head-logo .logo-img {
+  width: 115px;
+  height: 45px;
+}
+header .head-fixed .head-margin .head-link {
+  width: 360px;
+  display: inline-block;
+  font-size: 0;
+}
+header .head-fixed .head-margin .head-link a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 10px;
+  margin-right: 50px;
+}
+header .head-fixed .head-margin .head-link a:last-child {
+  color: #58a673;
+  margin-right: 0px;
+}
+header .head-fixed .head-margin .head-login {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+header .head-fixed .head-margin .head-login a {
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  height: 36px;
+  width: 100px;
+  line-height: 34px;
+  color: #58a673;
+  border: 1px solid #58a673;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 2px;
+}
+header .head-fixed .head-margin .head-login a:hover {
+  background-color: #58a673;
+  color: #fff;
+}
+header .head-fixed .head-margin .head-login a:last-child:hover {
+  background-color: #3ec16c;
+}
+header .head-fixed .head-margin .head-login a:last-child {
+  background-color: #58a673;
+  color: #fff;
+  width: 70px;
+  font-size: 14px;
+}
+.tp-container {
+  background-color: #fff;
+}
+.tp-container .container-about {
+  padding-top: 70px;
+}
+.tp-container .container-about .about-margin {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 0;
+}
+.tp-container .container-about .about-margin .about-title {
+  font-size: 42px;
+  color: #3f464b;
+  line-height: 50px;
+  font-weight: 400;
+}
+.tp-container .container-about .about-margin .about-title .about-eng {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #b1b1b5;
+}
+.tp-container .container-about .about-margin .about-text {
+  margin: 50px 0 70px;
+  font-size: 16px;
+  color: #3f464b;
+  text-align: justify;
+  line-height: 30px;
+}
+.tp-container .container-about .about-margin .about-text p {
+  margin-bottom: 16px;
+}
+.tp-container .container-believe {
+  padding-bottom: 85px;
+}
+.tp-container .container-believe .believe-margin {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.tp-container .container-believe .believe-margin .believe-title {
+  font-size: 42px;
+  color: #3f464b;
+  line-height: 50px;
+  font-weight: 400;
+}
+.tp-container .container-believe .believe-margin .believe-title .believe-eng {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #b1b1b5;
+}
+.tp-container .container-believe .believe-margin .believe-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tp-container .container-believe .believe-margin .believe-list .believe-item {
+  width: 500px;
+  display: inline-block;
+  height: 130px;
+  padding: 0 70px;
+  position: relative;
+}
+.tp-container .container-believe .believe-margin .believe-list .believe-item .believe-step {
+  font-size: 25px;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  border-radius: 50%;
+  background-color: #62bd82;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 5px 5px #deede3;
+}
+.tp-container .container-believe .believe-margin .believe-list .believe-item .believe-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #3f464b;
+}
+footer {
+  background-color: #1d1a33;
+  padding-top: 66px;
+  min-height: 320px;
+  border-top: 1px solid #aeaeb8;
+}
+footer .foot-margin {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+footer .foot-margin .foot-mess {
+  padding-left: 290px;
+  font-size: 0;
+}
+footer .foot-margin .foot-mess .foot-logo {
+  position: absolute;
+  top: -6px;
+  left: 20px;
+}
+footer .foot-margin .foot-mess .foot-logo img {
+  width: 130px;
+  display: block;
+}
+footer .foot-margin .foot-mess .foot-about {
+  width: 320px;
+  padding-right: 90px;
+  display: inline-block;
+}
+footer .foot-margin .foot-mess .foot-about dt {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  line-height: 20px;
+  height: 50px;
+}
+footer .foot-margin .foot-mess .foot-about dd {
+  font-size: 14px;
+  line-height: 28px;
+  color: #8a8b91;
+}
+footer .foot-margin .foot-mess .foot-about dt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #292644;
+}
+footer .foot-margin .foot-mess .foot-nav {
+  width: 160px;
+  display: inline-block;
+}
+footer .foot-margin .foot-mess .foot-nav dt {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  line-height: 20px;
+  height: 50px;
+}
+footer .foot-margin .foot-mess .foot-nav dt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #292644;
+}
+footer .foot-margin .foot-mess .foot-nav a {
+  font-size: 14px;
+  line-height: 28px;
+  color: #8a8b91;
+  text-decoration: none;
+}
+footer .foot-margin .foot-mess .foot-contact {
+  width: 230px;
+  display: inline-block;
+  vertical-align: top;
+}
+footer .foot-margin .foot-mess .foot-contact dt {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  line-height: 20px;
+  height: 50px;
+}
+footer .foot-margin .foot-mess .foot-contact dt:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 31px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #292644;
+}
+footer .foot-margin .foot-mess .foot-contact dd {
+  font-size: 14px;
+  line-height: 28px;
+  color: #8a8b91;
+}
+footer .foot-margin .foot-aside {
+  height: 33px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #8a8b91;
+  margin-top: 30px;
+}
+footer .foot-margin .foot-aside a {
+  color: #fff;
+  vertical-align: top;
+  line-height: 32px;
+  height: 32px;
+  text-decoration: none;
+}

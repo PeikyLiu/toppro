@@ -1,0 +1,828 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+header{
+  height: 75px;
+  .head-fixed{
+    padding-top: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #3a3b44;
+    height: 75px;
+    .head-margin{
+      width: 1000px;
+      margin: 0 auto;
+      .head-logo{
+        float: left;
+        width: 180px;
+        .logo-img{
+          width: 115px;
+          height: 45px;
+        }
+      }
+      .head-link{
+        width: 360px;
+        display: inline-block;
+        font-size: 0;
+        a{
+          display: inline-block;
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+          padding-top: 10px;
+          margin-right: 50px;
+        }
+        a:last-child{
+          margin-right: 0px;
+        }
+        a:nth-child(2){
+          color: #58a673;
+        }
+      }
+      .head-login{
+        float: right;
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        a{
+          text-decoration: none;
+          font-size: 15px;
+          display: inline-block;
+          height: 36px;
+          width: 100px;
+          line-height: 34px;
+          color: #58a673;
+          border: 1px solid #58a673;
+          text-align: center;
+          vertical-align: top;
+          border-radius: 2px;
+        }
+        a:hover{
+          background-color: #58a673;
+          color: #fff;
+        }
+        a:last-child:hover{
+          background-color: #3ec16c;
+        }
+        a:last-child{
+          background-color: #58a673;
+          color: #fff;
+          width: 70px;
+          font-size: 14px;         
+        }
+      }
+    }
+  }
+}
+.tp-container{
+  .container-banner{
+    background-color: #f8faf9;
+    .banner-margin{
+      width: 1200px;
+      margin: auto;
+      position: relative;
+      .banner-text{
+        padding: 117px 0 181px 87px;
+        .text-big{
+          font-size: 44px;
+          line-height: 68px;
+          font-weight: 400;
+        }
+        .text-small{
+          padding-top: 36px;
+          font-size: 18px;
+          line-height: 34px;
+        }
+      }
+      .banner-img{
+        position: absolute;
+        right: 137px;
+        top: 37px;
+        img{
+          width: 493px;
+          height: 453px;
+        }
+      }
+    }
+  }
+  .container-sign{
+    background-color: #fff;
+    .sign-margin{
+      width: 1200px;
+      margin: 0 auto;
+      .sign-list{
+        padding: 68px 0 193px;
+        width: 1000px;
+        justify-content: space-around;
+        display: flex;
+        margin: 0 auto;
+        .sign-item{
+          text-align: center;
+          width: 182px;
+          height: 200px;
+          .sign-img{
+            width: 82px;
+            height: 82px;
+            margin: 0 auto;
+            img{
+              width: 82px;
+            }
+          }
+          .sign-subtitle{
+            font-size: 30px;
+            padding-top: 22px;
+            color: #4e4d5a;
+          }
+          .sign-des{
+            font-size: 18px;
+            padding-top: 10px;
+            line-height: 25px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  .container-advantage{
+    height: 494px;
+    background: linear-gradient(90deg,#7ac192,#5aa2a5);
+    background-size: contain;
+    position: relative;
+    .advantage-margin{
+      width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+      .white-line{
+        position: absolute;
+        width: 2px;
+        height: 136px;
+        left: 566px;
+        top: 190px;
+        background-color: #fff;
+      }
+      .writeblock{
+        position: absolute;
+        width: 848px;
+        height: 274px;
+        right: -100px;
+        top: 0;
+        background-color: hsla(0,0%,100%,.15);
+      }
+      .writeblock2{
+        position: absolute;
+        width: 19px;
+        height: 100px;
+        left: 186px;
+        bottom: 0;
+        background-color: hsla(0,0%,100%,.09);
+      }
+      .pointers-left{
+        position: absolute;
+        width: 174px;
+        height: 191px;
+        background-image: url(http://www.weilaigongzuo.com/images/talents/decorate-pointers-left.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -80px;
+        top: 135px;
+      }
+      .pointers-down{
+        position: absolute;
+        width: 512px;
+        height: 191px;
+        background-image: url(http://www.weilaigongzuo.com/images/talents/decorate-pointers-bottom.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -80px;
+        bottom: -142px;
+      }
+      .item-work{
+        position: absolute;
+        left: 75px;
+        top: -42px;
+        .work-img{
+          width: 241px;
+          height: 180px;
+          img{
+            width: 100%;
+          }
+        }
+        .work-title{
+          font-size: 36px;
+          color: #fff;
+          padding-top: 24px;
+        }
+        .work-des{
+          font-size: 20px;
+          color: #fff;
+          padding-top: 12px;        
+        }
+      }
+      .item-company{
+        position: absolute;
+        left: 580px;
+        top: -96px;
+        .company-img{
+          width: 333px;
+          height: 245px;
+          img{
+            width: 100%;
+          }
+        }
+        .company-title{
+          font-size: 38px;
+          color: #fff;
+          padding-left: 195px;
+          padding-top: 24px;
+        }
+        .company-des{
+          font-size: 20px;
+          color: #fff;
+          padding-top: 12px;
+          padding-left: 195px;
+        }
+      }
+      .item-partner{
+        position: absolute;
+        left: 595px;
+        top: 292px;
+        .partner-img{
+          width: 315px;
+          height: 235px;
+          position: absolute;
+          left: 266px;
+          top: 67px;
+          img{
+            width: 100%;
+          }
+        }
+        .partner-title{
+          font-size: 38px;
+          color: #fff;
+        }
+        .partner-des{
+          font-size: 20px;
+          padding-top: 12px;
+          color: #fff;
+        }
+      }
+      .item-project{
+        position: absolute;
+        left: 268px;
+        top: 332px;
+        .project-img{
+          position: absolute;
+          left: -273px;
+          top: 0;
+          width: 252px;
+          height: 211px;
+          img{
+            width: 100%;
+          }
+        }
+        .project-title{
+          font-size: 38px;
+          color: #fff;
+        }
+        .project-des{
+          font-size: 20px;
+          color: #fff;
+          padding-top: 12px;
+        }
+      }
+    }
+  }
+  .container-process{
+    padding-top: 283px;
+    font-size: 0;
+    .process-margin{
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      .process-title{
+        p{
+          font-size: 32px;
+          padding-bottom: 14px;
+        }
+        span{
+          display: block;
+          height: 4px;
+          width: 42px;
+          background-color: #54baa2;
+          margin: 0 auto;
+        }
+      }
+      .process-selection{
+        padding-top: 80px;
+        .selection-list{
+          width: 1000px;
+          height: 60px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-around;
+          background-color: #f7f7f7;
+          line-height: 60px;
+          border-radius: 30px;
+          .selection-item{
+            p{
+              opacity: 0.5;
+              padding-left: 6px;
+              font-size: 14px;
+              display: inline-block;
+            }
+          }
+          .selection1{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-1.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+          .selection2{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-2.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+          .selection3{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-3.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+          .selection4{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-4.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+          .selection5{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-5.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+          .selection6{
+            span{
+              background-image: url(http://www.weilaigongzuo.com/images/talents/process-6.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+              display: block;
+              vertical-align: top;
+              margin-top: 18px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .content-list{
+        height: 670px;
+        .content-item{
+          height: 670px;
+          .content-subtitle{
+            font-size: 24px;
+            padding-top: 52px;
+            text-align: center;
+          }
+          .content-des{
+            text-align: center;
+            font-size: 15px;
+            padding-top: 37px;
+            color: #9e9e9e;
+            line-height: 36px;
+            padding-bottom: 30px;
+          }
+          .content-bg{
+            width: 1000px;
+            height: 388px;
+            margin: auto;
+            background-image: url(http://www.weilaigongzuo.com/images/talents/process-step-1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }   
+  }
+  .container-story{
+    font-size: 0;
+    .story-title{
+      text-align: center;
+      p{
+        font-size: 32px;
+        padding-bottom: 14px;
+      }
+      span{
+        width: 42px;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #54baa2;
+      }
+    }
+    .story-wrapper{
+      margin-top: 86px;
+      height: 100%;
+      position: relative;
+      background: linear-gradient(90deg,#7ac192,#5aa2a5);
+      .story-bg{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background-image: url(http://www.weilaigongzuo.com/images/talents/person-background.png);
+      }
+      .person-story{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 100;
+        .person-item{
+          height: 500px;
+          .person-img{
+            position: absolute;
+            left: 22px;
+            top: -117px;
+            width: 359px;
+            height: 617px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .person-text{
+            color: #fff;
+            padding-left: 464px;
+            padding-top: 63px;
+            .person-words{
+              font-size: 24px;
+              width: 615px;
+              line-height: 42px;
+              height: 260px;
+            }
+            .person-company{
+              padding-top: 73px;
+              font-size: 20px;
+            }
+            .person-job{
+              padding-top: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container-want{
+    padding: 176px 0 135px;
+    background: #fff;
+    font-size: 0;
+    .want-margin{
+      width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      .want-title{
+        p{
+          font-size: 32px;
+          padding-bottom: 14px;
+        }
+        span{
+          height: 4px;
+          width: 42px;
+          background-color: #54baa2;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .want-list1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .want-item{
+          padding-top: 60px;
+          img{
+            width: 250px;
+            height: 250px;
+          }
+          p{
+            font-size: 20px;
+            color: #2b3037;
+            text-align: center;
+            line-height: 34px;
+          }
+        }
+      }
+      .want-list2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .want-item{
+          padding-top: 60px;
+          img{
+            width: 250px;
+            height: 250px;
+          }
+          p{
+            font-size: 20px;
+            color: #2b3037;
+            text-align: center;
+            line-height: 34px;
+          }
+        }
+      }
+    }
+  }
+  .container-join{
+    background: linear-gradient(-241deg,#f7fdfd,#fff);
+    position: relative;
+    padding: 100px 0 100px;
+    font-size: 0;
+    .join-margin{
+      width: 1200px;
+      margin: auto;
+      .join-title{
+        text-align: center;
+        p{
+          font-size: 32px;
+          padding-bottom: 14px;
+        }
+        span{
+          height: 4px;
+          width: 42px;
+          background-color: #58a673;
+          display: block;
+          margin: auto;
+        }
+      }
+      .register{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 0;
+        .input-wrapper{
+          padding-top: 28px;
+          .input-margin{
+            width: 450px;
+            height: 55px;
+            position: relative;
+            border-radius: 2px;
+            margin: 0 auto;
+            .input-border{
+              border: 1px solid #9cead0;
+              width: 448px;
+              height: 55px;
+              input{
+                border: none;
+                display: inline-block;
+                width: 100%;
+                height: 53px;
+                line-height: 53px;
+                padding-left: 15px;
+                font-size: 16px;
+              }
+              span{
+                width: 122px;
+                display: inline-block;
+                text-align: center;
+                line-height: 53px;
+                color: #44d6a5;
+                font-size: 16px;
+              }
+              .pass-input{
+                width: 324px;
+              }
+            }
+          }
+        }
+        .agree{
+          padding-top: 30px;
+          margin-bottom: 20px;
+          text-align: center;
+          font-size: 16px;
+          position: relative;
+          p{
+            font-size: 16px;
+            position: relative;
+            width: 280px;
+            margin: 0 auto;
+            padding-left: 30px;
+            a{
+              font-size: 16px;
+              text-decoration: none;
+              color: #3300f8;
+            }
+          }
+          p:before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #38d39f;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+          }
+        }
+        button{
+          color: #fff;
+          font-size: 18px;
+          width: 207px;
+          height: 58px;
+          border-radius: 6px;
+          background-color: #38d39f;
+          line-height: 58px;
+          text-align: center;
+          margin: auto;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+      .img-girl{
+        width: 289px;
+        height: 390px;
+        position: absolute;
+        bottom: -30px;
+        left: 66px;
+        background-image: url(http://www.weilaigongzuo.com/images/talents/bottom-littleman-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .img-boy{
+        width: 85px;
+        height: 256px;
+        position: absolute;
+        bottom: -16px;
+        left: 946px;
+        background-image: url(http://www.weilaigongzuo.com/images/talents/bottom-littleman-2.png);
+        background-size: contain;
+      }
+    }
+  }
+}
+footer{
+  background-color: #1d1a33;
+  padding-top: 66px;
+  min-height: 320px;
+  border-top: 1px solid #aeaeb8;
+  .foot-margin{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    .foot-mess{
+      padding-left: 290px;
+      font-size: 0;
+      .foot-logo{
+        position: absolute;
+        top: -6px;
+        left: 20px;
+        img{
+          width: 130px;
+          display: block;
+        }
+      }
+      .foot-about{
+        width: 320px;
+        padding-right: 90px;
+        display: inline-block;
+        dt{
+          font-size: 15px;
+          color: #fff;
+          position: relative;
+          line-height: 20px;
+          height: 50px;
+        }
+        dd{
+          font-size: 14px;
+          line-height: 28px;
+          color: #8a8b91;
+        }       
+        dt:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 31px;
+          left: 2px;
+          width: 19px;
+          height: 3px;
+          background-color: #292644;
+        }
+      }
+      .foot-nav{
+        width: 160px;
+        display: inline-block;
+        dt{
+          font-size: 15px;
+          color: #fff;
+          position: relative;
+          line-height: 20px;
+          height: 50px;
+        }
+        dt:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 31px;
+          left: 2px;
+          width: 19px;
+          height: 3px;
+          background-color: #292644;
+        }
+        a{
+          font-size: 14px;
+          line-height: 28px;
+          color: #8a8b91;
+          text-decoration: none;
+        }
+      }
+      .foot-contact{
+        width: 230px;
+        display: inline-block;
+        vertical-align: top;
+        dt{
+          font-size: 15px;
+          color: #fff;
+          position: relative;
+          line-height: 20px;
+          height: 50px;
+        }
+        dt:before{
+          content: '';
+          display: block;
+          position: absolute;
+          top: 31px;
+          left: 2px;
+          width: 19px;
+          height: 3px;
+          background-color: #292644;
+        }
+        dd{
+          font-size: 14px;
+          line-height: 28px;
+          color: #8a8b91;
+        }
+      }
+    }
+    .foot-aside{
+      height: 33px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 12px;
+      border-top: 1px solid hsla(0,0%,100%,.1);
+      color: #8a8b91;
+      margin-top: 30px;
+      a{
+        color: #fff;
+        vertical-align: top;
+        line-height: 32px;
+        height: 32px;
+        text-decoration:none;
+      }
+    }
+  }
+}
