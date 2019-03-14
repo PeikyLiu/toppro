@@ -43,6 +43,9 @@ header .head-fixed .head-margin .head-link a {
   padding-top: 10px;
   margin-right: 50px;
 }
+header .head-fixed .head-margin .head-link a:hover {
+  color: #58a673;
+}
 header .head-fixed .head-margin .head-link a:last-child {
   color: #58a673;
   margin-right: 0px;
@@ -240,6 +243,9 @@ footer .foot-margin .foot-mess .foot-nav a {
   line-height: 28px;
   color: #8a8b91;
   text-decoration: none;
+}
+footer .foot-margin .foot-mess .foot-nav a:hover {
+  color: #58a673;
 }
 footer .foot-margin .foot-mess .foot-contact {
   width: 230px;
