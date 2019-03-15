@@ -126,7 +126,7 @@ body {
   background-color: #85ce61;
   border: 1px solid #85ce61;
 }
-.tp-bg .login-container .not-have {
+.tp-bg .login-container .login-id-nothave {
   color: #fff;
   font-size: 14px;
   width: 360px;
@@ -135,13 +135,13 @@ body {
   line-height: 25px;
   text-align: center;
 }
-.tp-bg .login-container .not-have a {
+.tp-bg .login-container .login-id-nothave a {
   text-decoration: none;
   color: #62bd82;
   font-size: 14px;
   line-height: 25px;
   text-align: justify;
 }
-.tp-bg .login-container .not-have span {
+.tp-bg .login-container .login-id-nothave span {
   color: #6d718c;
 }
